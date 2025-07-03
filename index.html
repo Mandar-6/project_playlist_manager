@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>SPOTIFY PLAYLIST MANAGER</h1>
+    <form id="playlist-form">
+        <label for="playlist-url">Spotify Playlist URL:</label>
+        <input type="url" id="playlist-url" name="playlist-url" required placeholder="Enter Spotify playlist URL">
+        <label for="playlist-label">Label/Category:</label>
+        <input type="text" id="playlist-label" name="playlist-label" required placeholder="Enter label or category">
+        <button type="submit">Add Playlist</button>
+    </form>
+    <div id="playlists-container">
+        <!-- Playlists will be displayed here -->
+    </div>
+
+    <!-- Edit Playlist Modal -->
+    <div id="modal-overlay" class="modal-overlay" style="display:none;"></div>
+    <div id="edit-modal" class="modal" style="display:none;">
+        <form id="edit-form">
+            <label for="edit-url">Spotify Playlist URL:</label>
+            <input type="url" id="edit-url" name="edit-url" required>
+            <label for="edit-label">Label/Category:</label>
+            <input type="text" id="edit-label" name="edit-label" required>
+            <div class="modal-buttons">
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-edit">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- </div>
+    <header>
+    <pre>
+    HEY! 
+    
+    WELCOME TO
+
+    SPOTIFY PLAYLIST MANAGER
+    </pre> -->
+
+
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
